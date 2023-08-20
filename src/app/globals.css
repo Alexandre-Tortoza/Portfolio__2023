@@ -3,25 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --backGround: #141414 ;
+  --text: #ffffff ;
+  --primary: #041b11 ;
+  --secondary: #fabd00 ;
+  --accent: #ffeb3c ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text);
+  background-color: var(--backGround);
+  background-image: url(../../public/noise.svg);
+
+  }
+
+.myName{
+  background: linear-gradient(180deg, #FFEB3C 26.04%, #FFEF62 60.42%, #FABD00 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.landing{
+  margin: 3.5rem;
+  padding: 2rem;
+  width: 90vw;
+  height: 80vh;
+
+  background:
+    linear-gradient(to right, var(--secondary) 4px, transparent 4px) 0 0,
+    linear-gradient(to right, var(--secondary) 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, var(--secondary) 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, var(--secondary) 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, var(--secondary) 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, var(--secondary) 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, var(--secondary) 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, var(--secondary) 4px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.text-link{
+  
+  font-size: 10px;
+
+}
+.dev{
+
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(to top right, #FFFFFF 46%, #FABD00 89%);
+  background: -moz-linear-gradient(to top right, #FFFFFF 46%, #FABD00 89%);
+  background: linear-gradient(to top right, #FFFFFF 46%, #FABD00 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
