@@ -8,29 +8,27 @@ export default function Home() {
 
 
 
-    <div className='landing h-screen w-screen flex justify-around'>
+    <div className='md:landing h-screen w-screen flex justify-around'>
         <div >
 
 
-            <h1 className='myName font-bold text-6xl'>Alexandre Marques</h1>
-            <div className='flex gap-2 items-center '>
+            <h1 className='myName font-bold text-6xl max-md:text-4xl max-md:p-10 max-md:text-center'>Alexandre Marques</h1>
+            <div className='flex gap-2 items-center max-md:justify-center '>
 
-                <span className='text-8xl'> {'{'}   </span>
-
-                <nav className='flex flex-col justify-center text-xl text-center text-link gap-1'>
+                <span className='text-8xl max-md:hidden'> {'{'}   </span>
+                <nav className='flex flex-col justify-center text-xl text-center text-link gap-1 max-md:hidden'>
                     <a href="#sobreMim" className=' hover:text-secondary delay-300 hover:delay-75  duration-300 hover:duration-200 ease-in-out'>Sobre Mim</a>
                     <a href="#Portfolio" className=' hover:text-secondary delay-300 hover:delay-75  duration-300 hover:duration-200 ease-in-out'>Portfolio</a>
                     <a href="#contato" className=' hover:text-secondary delay-300 hover:delay-75  duration-300 hover:duration-200 ease-in-out'>Contato</a>
                 </nav>
+                <span className='text-8xl max-md:hidden'> {'}'}   </span>
 
-                <span className='text-8xl'> {'}'}   </span>
-
-                <h2 className='dev text-3xl'>Desenvolvedor Full-Stack</h2>
+                <h2 className='dev text-3xl max-md:text-xl max-md:text-center'>Desenvolvedor Full-Stack</h2>
 
             </div>
 
             <div className='max-w-xl'>
-            <p className='mt-5 font-light'>Progamador Full-stack,sou apaixonado pelo que faço. Meu objetivo é gerar um impacto positivo na vida das pessoas. Estou constantemente em busca de novos desafios e adoro aprender coisas novas!</p>
+            <p className='md:mt-5 font-light max-md: p-10 max-md:text-sm'>Progamador Full-stack,sou apaixonado pelo que faço. Meu objetivo é gerar um impacto positivo na vida das pessoas. Estou constantemente em busca de novos desafios e adoro aprender coisas novas!</p>
             </div>
 
 
@@ -40,7 +38,7 @@ export default function Home() {
     </div>
 
 
-    <div className='m-14 gap-14 flex justify-around'>
+    <div className='m-14 gap-14 flex flex-wrap justify-around'>
 
         <div className='max-w-lg'>
             <h3 className='text-5xl text-secondary'id='sobreMim' >Sobre Mim</h3>
