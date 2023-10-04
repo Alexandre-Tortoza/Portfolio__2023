@@ -16,22 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-//         _..._
-//         .'     '.      _
-//        /    .-""-\\   _/ \\
-//      .-|   /:.    |  |   |
-//      |  \\  |:.   /.-'-./
-//      | .-'-;:__.'    =/
-//      .'=  *=|     _.='
-//     /   _.  |    ;       
-//    ;-.-'|    \\   |        Bem-vindo ao 
-//   /   | \\    _\\  _\\           cyberspace
-//   \\__/'._;.  ==' ==\\
-//            \\    \\   |
-//            /    /   /               ✦TrashStar✦✦
-//            /-._/-._/
-//            \\   '\\  \\
-//             '-._/._/     
       <body className={inter.className}>{children}</body>
     </html>
   )
