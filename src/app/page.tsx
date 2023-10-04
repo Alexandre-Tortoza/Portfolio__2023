@@ -2,17 +2,17 @@ import Image from 'next/image'
 
 export default function Home() {
     return (
-    <main>
+    <main className='max-md:text-center'>
 
 
 
 
 
-    <div className='md:landing h-screen w-screen flex justify-around'>
-        <div >
+    <div className='md:landing h-screen w-screen flex justify-around max-md:h-1/3'>
+        <div>
 
 
-            <h1 className='myName font-bold text-6xl max-md:text-4xl max-md:p-10 max-md:text-center'>Alexandre Marques</h1>
+            <h1 className='myName font-bold text-6xl max-md:text-6xl max-md:p-10 max-md:text-center'>Alexandre Marques</h1>
             <div className='flex gap-2 items-center max-md:justify-center '>
 
                 <span className='text-8xl max-md:hidden'> {'{'}   </span>
@@ -28,7 +28,7 @@ export default function Home() {
             </div>
 
             <div className='max-w-xl'>
-            <p className='md:mt-5 font-light max-md: p-10 max-md:text-sm'>Progamador Full-stack,sou apaixonado pelo que faço. Meu objetivo é gerar um impacto positivo na vida das pessoas. Estou constantemente em busca de novos desafios e adoro aprender coisas novas!</p>
+            <p className='md:mt-5 font-light max-md: p-10 max-md:text-xl'>Progamador Full-stack,sou apaixonado pelo que faço. Meu objetivo é gerar um impacto positivo na vida das pessoas. Estou constantemente em busca de novos desafios e adoro aprender coisas novas!</p>
             </div>
 
 
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
     </div>
 
-    <div id='contato' className='p-20 '>
+    <div id='contato' className='p-20 max-md:text-left max-md:p-10 max-md:pb-20'>
         <h3 className='text-5xl text-center m-5 text-secondary' id='contato'>Contato</h3>
         <div className='flex gap-5 justify-center'><h6>Email:</h6> <a href="mailto:a.marquestortoza@gmail.com" className='text-accent'>a.marquestortoza@gmail.com</a></div>
         <div className='flex gap-5 justify-center'><h6>Telefone:</h6> <a href="tel:+5541992081308" className='text-accent'>+55 (41) 99208-1308</a></div>
